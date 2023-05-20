@@ -1,0 +1,512 @@
+@font-face {
+  font-family: "Instrumental";
+  src: url("resources/InstrumentSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Baskerville Regular";
+  src: url("resources/BaskervilleMTStd-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Baskerville Semibold";
+  src: url("resources/BaskervilleMTStd-SemiBd.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Baskerville Italic";
+  src: url("resources/BaskervilleMTStd-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Baskerville BoldIt";
+  src: url("resources/BaskervilleMTStd-BoldIt.otf") format("truetype");
+}
+
+*,
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Baskerville Regular";
+  font-weight: normal;
+  color: #f7e2b1;
+}
+
+html {
+  background: #0b2534;
+}
+
+.italica16 {
+  font-family: "Baskerville BoldIt";
+  font-size: 16px;
+}
+
+.uppercase50 {
+  font-family: "Baskerville Regular";
+  font-size: 46px;
+  text-transform: uppercase;
+}
+
+.italica40 {
+  font-family: "Baskerville Italic";
+  font-size: 46px;
+  letter-spacing: 0.015em;
+}
+
+.regularpeque {
+  font-family: "Baskerville Regular";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.regulargrande {
+  font-family: "Baskerville Regular";
+  font-size: 48px;
+}
+
+/*HEADER*/
+
+header {
+  background-color: #0b2534;
+  top: 0px;
+  width: 100%;
+  height: 25vh;
+  z-index: 300;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logopapi {
+  font-family: "Instrumental";
+  font-size: 50px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin: 10px;
+  margin-top: 5vh;
+}
+
+.menu {
+  padding: 10px;
+  margin-top: 3vh;
+}
+
+.menulist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menulist .menulistas {
+  padding: 10px 40px;
+}
+
+.menulist .menulistas .friends {
+  font-size: 25px;
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  text-decoration: none;
+}
+
+/*BIENVENIDA*/
+
+.wellcome {
+  background-image: url("media/Banner_fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 814px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wellcome .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wellcome button {
+  margin-top: 10vh;
+}
+
+/*OCTOGONO*/
+.octogono{
+  margin-top: 50px;
+  padding: 100px;
+  background-image: url("./media/rectangle_button.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fix-center{
+  margin-left: 8vw;
+}
+
+.center-all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*CATÁLOGO*/
+.full-mid{
+  width: 100%;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100vw;
+}
+
+.image {
+  display: flex;
+  align-items: stretch;
+  float: left;
+  width: 50vw;
+}
+
+.textback {
+  float: right;
+  height: 100vh;
+  width: 50vw;
+  background-color: none;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+.textback p {
+  margin-top: 15vh;
+}
+
+
+.cards02 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  width: 100vw;
+}
+
+.image02 {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  float: right;
+  width: 50vw;
+}
+
+
+.textback02 {
+  float: left;
+  float: right;
+  height: 100vh;
+  width: 50vw;
+  background-color: none;
+
+  text-align: center;
+  overflow: hidden;
+}
+.textback02 p {
+  margin-top: 15vh;
+}
+
+.more {
+  font-family: "Baskerville Regular";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.seal {
+  margin-top: 25vh;
+}
+
+.comprar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  font-family: "Baskerville BoldIt";
+  font-size: 16px;
+}
+
+/*GRACIAS*/
+
+.womens {
+  background-image: url(media/Fondo_historias.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.textwo {
+  width: 35vw;
+  margin-top: 23vh;
+  margin-left: 8vw;
+  text-align: center;
+}
+
+.womens button {
+  margin-top: 20vh;
+}
+
+.estiloboton2 {
+  position: relative;
+  background: transparent;
+  border-color: #f7e2b1;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px 40px;
+  height: 45px;
+  width: 350px;
+
+  -webkit-clip-path: polygon(
+    5% 0,
+    95% 0,
+    100% 25%,
+    100% 75%,
+    95% 100%,
+    5% 100%,
+    0 75%,
+    0 25%
+  );
+  clip-path: polygon(
+    5% 0,
+    95% 0,
+    100% 25%,
+    100% 75%,
+    95% 100%,
+    5% 100%,
+    0 75%,
+    0 25%
+  );
+}
+
+/*PRECIOS*/
+
+.clear {
+  background-color: #f7efde;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.imageclear {
+  float: left;
+  background-size: 100%;
+  margin: 40px 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.textbackclear {
+  float: right;
+  width: 47vw;
+
+  text-align: center;
+}
+
+.ptbc {
+  width: 30vw;
+  margin-top: 14.3vh;
+  margin-left: 8vw;
+}
+
+.regularnormal {
+  font-family: "Baskerville Regular";
+  font-size: 30px;
+  color: #0b2534;
+}
+
+.italica40blue {
+  font-family: "Baskerville Italic";
+  font-size: 48px;
+  letter-spacing: 0.015em;
+  color: #0b2534;
+}
+
+.italica16blue {
+  font-family: "Baskerville BoldIt";
+  font-size: 16px;
+  color: #0b2534;
+}
+
+.italic18 {
+  font-family: "Baskerville Italic";
+  font-size: 18px;
+  color: #0b2534;
+}
+
+.regular16 {
+  font-family: "Baskerville Regular";
+  font-size: 16px;
+  color: #0b2534;
+}
+
+.moreblue {
+  font-family: "Baskerville Semibold";
+  font-size: 16px;
+  color: #0b2534;
+  text-transform: uppercase;
+}
+
+.imageclearbottom {
+  margin-top: 11.9vh;
+}
+
+.little {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pclear {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  text-align: left;
+}
+
+/*MILITARES*/
+
+.become {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  margin-top: 10vh;
+  padding: 0 75px 40px 75px;
+}
+
+.modules {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.module01 {
+  float: left;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 8% 0 8% 4%;
+  margin-bottom: 5vh;
+  border-right: 1px solid #f7e2b1;
+}
+
+.point {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #f7e2b1;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin: 24px 0 22px 0;
+}
+
+.semibold18 {
+  font-family: "Baskerville Semibold";
+  font-size: 18px;
+  letter-spacing: 0.045em;
+}
+
+.module02 {
+  float: right;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 8% 4% 13% 0;
+  margin-bottom: 5vh;
+}
+
+.regularnormalclear {
+  font-family: "Baskerville Regular";
+  font-size: 35px;
+  letter-spacing: 0.015em;
+  color: #f7e2b1;
+}
+
+.parregular {
+  font-family: "Baskerville Regular";
+  font-size: 35px;
+  letter-spacing: 0.015em;
+  color: #f7e2b1;
+
+  text-align: center;
+  padding: 0 5vw 0 8vw;
+}
+
+/*FOOTER*/
+
+.final {
+  display: flex;
+  margin: 0 5vw 5vh 5vw;
+  border-top: 1px solid #f7e2b1;
+}
+.semibold16 {
+  padding-left: 1.25vw;
+  font-family: "Baskerville Semibold";
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.045em;
+}
+
+.options {
+  padding-left: 5vw;
+  margin-top: 4vh;
+}
+
+.optiones {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.optiones .potis {
+  padding: 10px 20px;
+}
+
+.optiones .potis .tissy {
+  font-size: 16px;
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  text-decoration: none;
+}
+
